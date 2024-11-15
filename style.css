@@ -1,0 +1,173 @@
+@keyframes logo {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 100px;
+  max-width: 1440px;
+}
+header {
+    position: fixed ;
+    width: 100%;
+    z-index: 10;
+    background-color: #f3d7b7;
+    padding: 20px 0;
+}
+.header-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.header-parent__nav {
+    display: flex;
+    gap: 30px;
+}
+.header-parent__nav a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 12px;
+    font-weight: 700;
+}
+.header-parent__nav a:hover {
+    transform: scale(1.1);
+    transition: none 0.3s;
+}
+
+.coffee {
+  background-color: #f3d7b7;
+  padding-top: 130px;
+}
+.coffee-parent {
+  position: relative;
+  top: 70px;
+  display: flex;
+  justify-content: space-between;
+  gap: 197px;
+}
+.coffe-parent__left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 47px;
+  width: 400px;
+  font-size: 16px;
+}
+.coffe-parent__left h1 {
+  font-size: 53px;
+}
+.coffe-parent__left button {
+  background-color: #0a775f;
+  font: 16px;
+  color: white;
+  padding: 18px;
+  border: none;
+  width: 190px;
+  border-radius: 100px;
+}
+.coffe-parent__left button:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.coffe-parent__right {
+  margin-right: -100px;
+  position: relative;
+}
+.coffe-parent__logo {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  animation: logo 5s linear infinite;
+}
+
+.collection {
+  background-color: #f8f8f2;
+  padding-top: 110px;
+}
+.collection h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.card-parent {
+  margin: 0 auto;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  margin-top: 50px;
+}
+.card h2 {
+  font-size: 45px;
+}
+.card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 410px;
+}
+.card img {
+  transition: all 1s;
+  width: 500px;
+}
+.card img:hover {
+  transform: scale(1.1);
+}
+.card--2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 70px;
+}
+
+footer {
+    background-color: #f3d7b7;
+    padding: 50px 0;
+}
+.footer-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-parent__nav {
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
+}
+.footer-parent__nav a {
+    text-decoration: none;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.footer-parent__nav a:hover {
+    transform: scale(1.1);
+    transition: none 0.3s;
+}
+.footer-parent__logos {
+    display: flex;
+    gap: 30px;
+    color: #333333;
+    font-size: 30px;
+    cursor: pointer;
+}
+.footer-parent__logos i:hover {
+    transform: scale(1.1);
+    transition: none 0.3s;
+}
